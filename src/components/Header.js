@@ -2,29 +2,32 @@ import './css/header.css'
 import React, { Component } from 'react';
 
 import { $, $$, p } from './functions.js'
+//component
+import Burger from './Burger.js'
+//images
+import logo_bookmark from './images/logo-bookmark.svg'
 
 class Header extends Component {
 
     state = {
-        clase: 'burger'
+        navClase: 'nav_list'
     }
 
-    changeClass = () => {
+    changeNavListClass = () => {
         this.setState({
-            clase: this.state.clase === 'burger' ? 'change' : 'burger'
+            navClase: this.state.navClase === 'nav_list_hide' 
+            ? 'nav_list' 
+            : 'nav_list_hide'
         })
     }
-
     render() {
         return <header>
         <nav>
-            <figure></figure>
-            <div className={this.state.clase} onClick={this.changeClass}>
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <ul>
+            <figure>
+                <img src={logo_bookmark} />
+            </figure>
+            <Burger changeNavListClass={this.changeNavListClass}/>
+            <ul className={this.state.navClase}>
                 <li>Features</li>
                 <li>Pricing</li>
                 <li>Contact</li>

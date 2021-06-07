@@ -9,9 +9,21 @@
 .burger {
   display: block;
   cursor: pointer;
+  width: fit-content;
   position: relative;
-  left: 0;
+  left: 95%;
   top: 0;
+  border: solid;
+}
+
+.change {
+  display: block;
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+  left: 95%;
+  top: 0;
+  border: solid;
 }
 
 .bar1,
@@ -22,6 +34,7 @@
   background-color: black;
   margin: 6px 0;
   transition: 0.4s;
+  position: relative;
 }
 
 .change .bar1 {
@@ -40,6 +53,9 @@
 
 header {
   color: red;
+}
+header nav .nav_list_hide {
+  display: none;
 }
 
 /*# sourceMappingURL=header.css.map */

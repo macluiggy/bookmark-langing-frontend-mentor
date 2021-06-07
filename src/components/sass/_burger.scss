@@ -9,10 +9,22 @@
 .burger {
     display: block;
     cursor: pointer;
-    position: relative;
     //@include border(red);
-    left: 0;
+    width: fit-content;
+    position: relative;
+    left: 95%;
     top: 0;
+    border: solid
+}
+.change {
+    display: block;
+    cursor: pointer;
+    //@include border(red);
+    width: fit-content;
+    position: relative;
+    left: 95%;
+    top: 0;
+    border: solid
 }
 
 .bar1,
@@ -23,6 +35,7 @@
     background-color: black;
     margin: 6px 0;
     transition: 0.4s;
+    position: relative;
 }
 
 .change .bar1 {

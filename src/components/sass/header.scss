@@ -1,4 +1,13 @@
 @import 'burger';
 header {
 	color: red;
+
+	nav {
+		.nav_list {
+
+		}
+		.nav_list_hide {
+			display: none;
+		}
+	}
 }
