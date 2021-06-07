@@ -1,8 +1,17 @@
+:root {
+  /*Primary*/
+--soft_blue: hsl(231, 69%, 60%)
+--soft_red: hsl(0, 94%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(229, 8%, 60%)
+- Very Dark Blue: hsl(229, 31%, 21%)
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
