@@ -13,7 +13,7 @@ export default class Burger extends Component {
     }
 
     render() {
-    	return <div className={this.state.clase} onClick={this.changeClass}>
+    	return <div id='burger' className={this.state.clase} onClick={this.changeClass}>
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>

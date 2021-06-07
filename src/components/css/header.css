@@ -11,7 +11,6 @@
   cursor: pointer;
   width: fit-content;
   position: relative;
-  left: 95%;
   top: 0;
   border: solid;
 }
@@ -21,7 +20,6 @@
   cursor: pointer;
   width: fit-content;
   position: relative;
-  left: 95%;
   top: 0;
   border: solid;
 }
@@ -53,9 +51,50 @@
 
 header {
   color: red;
+  padding: 0;
+  background-image: url("../images/illustration-hero.svg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-header nav .nav_list_hide {
+header nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border: solid green;
+}
+header nav .logo_container {
+  border: solid red;
+  margin: 0;
+  width: 15em;
+  margin: 1em;
+}
+header nav .logo_container img {
+  width: 100%;
+}
+header nav #burger {
+  border: solid green;
+  margin: 1em;
+}
+header nav .nav_list_container {
+  border: solid violet;
+  position: absolute;
+  padding: 0;
+  right: -0.25%;
+  width: 100%;
+  top: 75px;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+}
+header nav .nav_list_container .nav_list {
+  list-style-type: none;
+}
+header nav .nav_list_container_hide {
   display: none;
+}
+header .header_title {
+  border: solid blue;
+  margin: 16em 0 0 0;
 }
 
 /*# sourceMappingURL=header.css.map */
