@@ -6,17 +6,17 @@ header {
     padding: 0;
     background-image: url('../images/illustration-hero.svg');
     background-size: 100%;
-    background-position: center center;
+    background-position: center 200px;
     background-repeat: no-repeat;
 
     nav {
         display: flex;
         justify-content: space-between;
         position: relative;
-        @include border(green);
+        //@include border(green);
 
         .logo_container {
-            @include border(red);
+            //@include border(red);
             margin: 0;
             width: 15em;
             margin: 1em;
@@ -27,12 +27,12 @@ header {
         }
 
         #burger {
-            @include border(green);
+            //@include border(green);
             margin: 1em;
         }
 
         .nav_list_container {
-            @include border(violet);
+            //@include border(violet);
             position: absolute;
             padding: 0;
             right: -0.25%;
@@ -43,7 +43,37 @@ header {
 
             .nav_list {
                 list-style-type: none;
-
+                padding: 0;
+                font-size: 1.666666667em;
+                color: white;
+                text-transform: uppercase;
+                li {
+                    line-height: 200%;
+                    border-top: solid 1px;
+                    width: 80%;
+                    margin: 0px auto 20px auto;
+                    padding-top: 20px;
+                }
+                li:last-child {
+                    border: solid;
+                    border-radius: 0.5rem;
+                    width: 80%;
+                    margin: auto;
+                    padding: 0;
+                }
+            }
+            .header_social_media {
+                //@include border(white);
+                display: flex;
+                width: 100%;
+                margin: auto;
+                justify-content: center;
+                position: relative;
+                top: 20%;
+                img {
+                    width: 7%;
+                    padding: 1em;
+                }
             }
         }
 
@@ -53,7 +83,37 @@ header {
     }
 
     .header_title {
-        @include border(blue);
-        margin: 16em 0 0 0;
+        //@include border(blue);
+        margin: 14em 0 0 0;
+        font-size: 39px;
+        //@include border(blue);
+        color: black;
+        padding: 0 0.3em;
+    }
+    p {
+        padding: 0 0.5em;
+        //@include border(black);
+        width: 90%;
+        margin: 1.5em auto;
+        color: var(--grayish_blue);
+        font-size: 23px;
+    }
+    button {
+        //@include border(brown);
+        width: 40%;
+        margin: 0.5em;
+        font-size: 1.277777778em;
+        padding: 0.9em 0;
+        border-radius: 0.5rem;
+        border: none;
+        font-weight: bold;
+    }
+    .button_left {
+        background-color: var(--soft_blue);
+        color: white;
+    }
+    .button_right {
+        @include box-shadow(0px, 3px, 5px, gray);
+        color: var(--very_dark_blue);
     }
 }
