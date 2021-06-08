@@ -38,7 +38,7 @@ class Header extends Component {
                     <li>Features</li>
                     <li>Pricing</li>
                     <li>Contact</li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="#hola">Login</a></li>
                 </ul>
                 <figure className='header_social_media'>
                     <img src={facebook} alt="facebook logo" />
