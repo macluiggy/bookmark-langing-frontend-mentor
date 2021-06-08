@@ -180,7 +180,6 @@ header .button_right:hover {
   header {
     background-position: right 150px;
     background-size: 50%;
-    border: solid red;
     padding-bottom: 2em;
   }
   header .header_title {

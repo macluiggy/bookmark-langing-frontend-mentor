@@ -1,7 +1,7 @@
 import './css/header.css'
 import React, { Component } from 'react';
 
-import { $, $$, p } from './functions.js'
+//import { $, $$, p } from './functions.js'
 //component
 import Burger from './Burger.js'
 //images
@@ -30,7 +30,7 @@ class Header extends Component {
         return <header>
         <nav style= {{backgroundColor: this.state.navBackground}}>
             <figure className='logo_container'>
-                <img src={logo_bookmark} />
+                <img src={logo_bookmark} alt='bookmark logo'/>
             </figure>
             <Burger changeNavListClass={this.changeNavListClass}/>
             <div className={this.state.navClase}>
@@ -38,7 +38,7 @@ class Header extends Component {
                     <li>Features</li>
                     <li>Pricing</li>
                     <li>Contact</li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="#">Login</a></li>
                 </ul>
                 <figure className='header_social_media'>
                     <img src={facebook} alt="facebook logo" />

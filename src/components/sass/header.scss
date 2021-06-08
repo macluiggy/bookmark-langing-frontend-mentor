@@ -144,7 +144,7 @@ header {
     header {
         background-position: right 150px;
         background-size: 50%;
-        @include border(red);
+        //@include border(red);
         padding-bottom: 2em;
         .header_title {
             margin: 2em 0 0 0;
