@@ -39,7 +39,7 @@ header {
             width: 100%;
             top: 75px;
             background-color: rgba(black, 0.75);
-            height: 100vh;
+            height: 130vh;
 
             .nav_list {
                 list-style-type: none;
@@ -60,6 +60,10 @@ header {
                     width: 80%;
                     margin: auto;
                     padding: 0;
+                }
+                li:last-child a {
+                    text-decoration: none;
+                    color: white;
                 }
             }
             .header_social_media {
@@ -96,7 +100,7 @@ header {
         width: 90%;
         margin: 1.5em auto;
         color: var(--grayish_blue);
-        font-size: 23px;
+        font-size: 20px;
     }
     button {
         //@include border(brown);
@@ -107,14 +111,27 @@ header {
         border-radius: 0.5rem;
         border: none;
         font-weight: bold;
+        transition: background-color 0.5s;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: white;
     }
     .button_left {
         background-color: var(--soft_blue);
         color: white;
+        border: solid var(--soft_blue);
+    }
+    .button_left:hover {
+        color: var(--soft_blue);
     }
     .button_right {
         @include box-shadow(0px, 3px, 5px, gray);
         color: var(--very_dark_blue);
+        transition: border 0.5s;
+    }
+    .button_right:hover {
+        border: solid var(--very_dark_blue);
     }
 }
 
@@ -125,7 +142,7 @@ header {
 }
 @media screen and (min-width: 900px) {
     header {
-        background-position: right 90px;
+        background-position: right 150px;
         background-size: 50%;
         @include border(red);
         padding-bottom: 2em;
@@ -136,22 +153,23 @@ header {
             .logo_container {
                 margin: 2em 0 0 4em;
                 width: 10em;
-                @include border(blue);
+                //@include border(blue);
             }
             .nav_list_container {
                 position: relative !important;
             }
             .nav_list_container_hide {
                 display: flex;
-                @include border(black);
+                //@include border(black);
                 background-color: transparent;
                 position: relative !important;
-                left: 10%;
+                left: 15%;
                 padding: 0;
-                margin: 0 auto;
+                margin: 0 auto 3em auto;
                 width: 40%;
                 .nav_list {
                     display: flex;
+                    flex-direction: row;
                     list-style-type: none;
                     padding: 0;
                     justify-content: space-between;
@@ -160,6 +178,28 @@ header {
                     li {
                         padding-top: 0 !important;
                         margin: 0 !important;
+                        color: var(--grayish_blue);
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        padding-right: 1em;
+                        cursor: pointer;
+                        transition: color 0.5s;
+                    }
+                    li:hover {
+                        color: var(--soft_red);
+                    }
+                    li:last-child a {
+                        background-color: var(--soft_red);
+                        padding: 0.4em 1.7em;
+                        text-decoration: none;
+                        color: white;
+                        border: solid var(--soft_red);
+                        border-radius: 0.3em;
+                        transition: color, background-color 0.5s;
+                    }
+                    li:last-child a:hover {
+                        color: var(--soft_red);
+                        background-color: transparent;
                     }
                 }
             }
