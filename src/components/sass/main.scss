@@ -1,0 +1,19 @@
+@import 'mixins';
+main {
+	margin-top: 5em;
+	.main_section1 {
+		@include border(gray);
+		width: 90%;
+		margin: auto;
+		h2 {
+			font-weight: 500;
+		}
+		p {
+			font-size: 16px;
+			color: var(--grayish_blue);
+		}
+		@media screen and (min-width: 900px) {
+			width: 37%;
+		}
+	}
+}

@@ -1,3 +1,22 @@
-
+main {
+  margin-top: 5em;
+}
+main .main_section1 {
+  border: solid gray;
+  width: 90%;
+  margin: auto;
+}
+main .main_section1 h2 {
+  font-weight: 500;
+}
+main .main_section1 p {
+  font-size: 16px;
+  color: var(--grayish_blue);
+}
+@media screen and (min-width: 900px) {
+  main .main_section1 {
+    width: 37%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
