@@ -21,17 +21,20 @@ main {
 			padding: 0em;
 			width: 80%;
 			margin: 2em auto;
+			list-style-type: none;
 			li {
-				list-style-type: none;
-				padding: 0em 0em;
+				padding: 1em 0em;
 				height: 30px;
 				display: list-item;
 				border-style: solid;
 				border-width: 1px 0 0 0;
-				span {
-					border-style: solid;
-					border-width: 0 0 2px 0;
-					height: 30px;
+				position: relative;
+				.active {
+					height: 120px;
+					border-bottom: solid var(--soft_red) 5px;
+					position: relative;
+					z-index: 1;
+					padding-bottom: 1.15em;
 				}
 			}
 			li:last-child {

@@ -14,14 +14,7 @@ class Main extends Component {
             <p>Our aim is to make it quick and easy for you to access your favourite websites.
                 Your bookmarks sync between your devices so you can access them on the go.</p>
         </section>
-        <section className='main_section2'>
-            <ul>
-                <li><span>Simple Bookmarking</span></li>
-                <li><span>Speedy Searching</span></li>
-                <li><span>Easy Sharing</span></li>
-            </ul>
-            <Cards />
-        </section>
+        <Cards />
 		</main>
 	}
 }
