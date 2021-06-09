@@ -18,5 +18,34 @@ main .main_section1 p {
     width: 37%;
   }
 }
+main .main_section2 ul {
+  padding: 0em;
+  width: 80%;
+  margin: 2em auto;
+}
+main .main_section2 ul li {
+  list-style-type: none;
+  padding: 0em 0em;
+  height: 30px;
+  display: list-item;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+}
+main .main_section2 ul li span {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  height: 30px;
+}
+main .main_section2 ul li:last-child {
+  border-width: 1px 0 1px 0;
+}
+main .main_section2 .card_container .illustration_container {
+  width: fit-content;
+  height: fit-content;
+  border: solid red;
+}
+main .main_section2 .card_container .illustration_container img {
+  width: 80%;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -17,6 +17,36 @@ main {
 		}
 	}
 	.main_section2 {
-		
+		ul {
+			padding: 0em;
+			width: 80%;
+			margin: 2em auto;
+			li {
+				list-style-type: none;
+				padding: 0em 0em;
+				height: 30px;
+				display: list-item;
+				border-style: solid;
+				border-width: 1px 0 0 0;
+				span {
+					border-style: solid;
+					border-width: 0 0 2px 0;
+					height: 30px;
+				}
+			}
+			li:last-child {
+				border-width: 1px 0 1px 0;
+			}
+		}
+		.card_container {
+			.illustration_container {
+				width: fit-content;
+				height: fit-content;
+				@include border(red);
+				img {
+					width: 80%;
+				}
+			}
+		}
 	}
 }

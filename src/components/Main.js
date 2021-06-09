@@ -16,9 +16,9 @@ class Main extends Component {
         </section>
         <section className='main_section2'>
             <ul>
-                <li>Simple Bookmarking</li>
-                <li>Speedy Searching</li>
-                <li>Easy Sharing</li>
+                <li><span>Simple Bookmarking</span></li>
+                <li><span>Speedy Searching</span></li>
+                <li><span>Easy Sharing</span></li>
             </ul>
             <Cards />
         </section>
