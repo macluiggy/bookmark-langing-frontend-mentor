@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 //css
 import './css/main.css';
 //component
-import Cards from './cards.js'
+import Cards from './cards'
+import Extensions from './extensions.js'
 
 
 class Main extends Component {
@@ -15,6 +16,14 @@ class Main extends Component {
                 Your bookmarks sync between your devices so you can access them on the go.</p>
         </section>
         <Cards />
+        <section className='main_section3'>
+            <article className='download_the_extension'>
+                <h2>Download the extension</h2>
+                <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+                    got a favourite you’d like us to prioritize.</p>
+            </article>
+            <Extensions />
+        </section>
 		</main>
 	}
 }

@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"browser": "Chrome",
+		"version": "62"
+	},
+	{
+		"id": 2,
+		"browser": "Firefox",
+		"version": "55"
+	},
+	{
+		"id": 3,
+		"browser": "Opera",
+		"version": "46"
+	}
+]

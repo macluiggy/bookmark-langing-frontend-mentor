@@ -83,6 +83,9 @@ main .main_section2 .card_container .card_description button:hover {
   color: var(--soft_blue);
   cursor: pointer;
 }
+main .main_section3 .extension_container {
+  border: solid black;
+}
 
 @media screen and (min-width: 900px) {
   .main_section1 p {
@@ -103,7 +106,6 @@ main .main_section2 .card_container .card_description button:hover {
   .main_section2 .card_container {
     flex-direction: row !important;
     margin-bottom: 7em !important;
-    border: solid var(--soft_blue);
     width: 80%;
     margin: auto;
   }

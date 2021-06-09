@@ -85,6 +85,14 @@ main {
 			}
 		}
 	}
+	.main_section3 {
+		.download_the_extension {
+
+		}
+		.extension_container {
+			@include border(black);
+		}
+	}
 }
 
 @media screen and (min-width:900px) {
@@ -110,7 +118,7 @@ main {
 		.card_container {
 			flex-direction: row !important;
 			margin-bottom: 7em !important;
-			@include border(var(--soft_blue));
+			//@include border(var(--soft_blue));
 			width: 80%;
 			margin: auto;
 
