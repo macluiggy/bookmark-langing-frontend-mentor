@@ -9,7 +9,7 @@ main {
 			font-weight: 500;
 		}
 		p {
-			font-size: 16px;
+			font-size: 1.125em;
 			color: var(--grayish_blue);
 		}
 		@media screen and (min-width: 900px) {
@@ -29,6 +29,7 @@ main {
 				border-style: solid;
 				border-width: 1px 0 0 0;
 				position: relative;
+				cursor: default;
 				.active {
 					height: 120px;
 					border-bottom: solid var(--soft_red) 5px;
@@ -42,12 +43,37 @@ main {
 			}
 		}
 		.card_container {
+			display: flex;
+			flex-direction: column;
 			.illustration_container {
-				width: fit-content;
+				width: 80%;
 				height: fit-content;
-				@include border(red);
+				//@include border(red);
 				img {
-					width: 80%;
+					width: 100%;
+				}
+			}
+			.card_description {
+				width: 80%;
+				margin: auto;
+				h2 {
+					font-size: 1.3888888889em;
+				}
+				p {
+					font-size: 0.8605556em;
+				}
+				button {
+					background-color: var(--soft_blue);
+					color: white;
+					border: solid var(--soft_blue);
+					padding: 0.76em 0.9em;
+					border-radius: 0.3rem;
+					font-size: 16px;
+					transition: color, background-color 0.5s;
+				}
+				button:hover {
+					background-color: white;
+					color: var(--soft_blue);
 				}
 			}
 		}

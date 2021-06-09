@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 //images
 import illustration1 from './images/illustration-features-tab-1.svg';
+import illustration2 from './images/illustration-features-tab-2.svg';
+import illustration3 from './images/illustration-features-tab-3.svg';
 //function
 import {p} from './functions'
 
@@ -44,13 +46,13 @@ class Cards extends Component {
 		                <li><span className={this.state.item3} 
 		                onClick={this.setActive}>Easy Sharing</span></li>
 		            </ul>)
-		if (true) {
+		if (this.state.item1 === 'item active') {
 			return (<section className='main_section2'>
 			            {items}
 			            <article className='card_container'>
-							<firgure className='illustration_container'>
+							<figure className='illustration_container'>
 								<img src={illustration1} alt="illustration features tab 1" />
-							</firgure>
+							</figure>
 			                <article className='card_description'>
 			                	<h2>Bookmark in one click</h2>
 			                	<p>Organize your bookmarks however you like. Our simple drag-and-drop interface
@@ -60,20 +62,36 @@ class Cards extends Component {
 			            </article>
 			        </section>)
 			
-		} else if (false) {
-			return <article>
-                <h2>Intelligent search</h2>
-                <p>Our powerful search feature will help you find saved sites in no time at all.
-                    No need to trawl through all of your bookmarks.</p>
-                <button>More Info</button>
-            </article>
+		} else if (this.state.item2 === 'item active') {
+			return (<section className='main_section2'>
+				        {items}
+						<article className='card_container'>
+							<figure className='illustration_container'>
+								<img src={illustration2} alt="illustration features tab 2" />
+							</figure>
+							<article className='card_description'>
+								<h2>Intelligent search</h2>
+		                		<p>Our powerful search feature will help you find saved sites in no time at all.
+		                    		No need to trawl through all of your bookmarks.</p>
+		                		<button>More Info</button>
+							</article>
+						</article>
+					</section>)
 		} else {
-			return <article>
-                <h2>Share your bookmarks</h2>
-                <p>Easily share your bookmarks and collections with others. Create a shareable
-                    link that you can send at the click of a button.</p>
-                <button>More Info</button>
-            </article>
+			return (<section className='main_section2'>
+						{items}
+						<article className='card_container'>
+							<figure className='illustration_container'>
+								<img src={illustration3} alt='illustration features tab 3' />
+							</figure>
+							<article className='card_description'>
+								<h2>Share your bookmarks</h2>
+				                <p>Easily share your bookmarks and collections with others. Create a shareable
+				                    link that you can send at the click of a button.</p>
+				                <button>More Info</button>
+							</article>
+						</article>
+					</section>)
 		}
 	}
 }
