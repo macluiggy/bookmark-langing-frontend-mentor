@@ -34,6 +34,11 @@ footer .contact article .contact_us {
   background-color: var(--soft_red);
   color: white;
   border: solid var(--soft_red);
+  transition: background-color 0.5s, color 0.5s;
+}
+footer .contact article .contact_us:hover {
+  background-color: white;
+  color: var(--soft_red);
 }
 footer .final {
   background-color: var(--very_dark_blue);
