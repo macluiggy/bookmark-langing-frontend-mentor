@@ -144,6 +144,11 @@ main .main_section4 .question_container {
 main .main_section4 .question_container summary {
   border-bottom: solid 1px var(--grayish_blue);
   padding: 1em 0;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+main .main_section4 .question_container summary:hover {
+  color: var(--soft_red);
 }
 main .main_section4 .question_container p {
   color: var(--grayish_blue);
@@ -159,6 +164,14 @@ main .main_section4 button {
   border-radius: 0.3em;
   transition: color, background-color 0.5s;
   font-size: 1em;
+}
+main .main_section4 button:hover {
+  background-color: white;
+  color: var(--soft_blue);
+}
+
+button {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {
@@ -206,6 +219,11 @@ main .main_section4 button {
   }
   .main_section3 .extensions_container .extension_container3 {
     align-self: flex-end;
+  }
+
+  .main_section4 {
+    border: solid red;
+    width: 40% !important;
   }
 }
 

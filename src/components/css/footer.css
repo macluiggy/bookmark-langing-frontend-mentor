@@ -1,0 +1,10 @@
+footer .contact {
+  border: solid red;
+  background-color: var(--soft_blue);
+}
+footer .contact article {
+  width: 80%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=footer.css.map */

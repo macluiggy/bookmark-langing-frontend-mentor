@@ -149,6 +149,11 @@ main {
 				//@include border(orange);
 				border-bottom: solid 1px var(--grayish_blue);
 				padding: 1em 0;
+				transition: color 0.5s;
+				cursor: pointer;
+			}
+			summary:hover {
+				color: var(--soft_red);
 			}
 			p {
 				color: var(--grayish_blue);
@@ -166,8 +171,18 @@ main {
 				transition: color, background-color 0.5s;
 				font-size: 1em;
 		}
+		button:hover {
+				background-color: white;
+				color: var(--soft_blue);
+		}
 	}
 }
+
+
+button {
+	cursor: pointer;
+}
+
 
 @media screen and (min-width:900px) {
 	.main_section1 {
@@ -223,5 +238,9 @@ main {
 				align-self: flex-end;
 			}
 		}
+	}
+	.main_section4 {
+		 @include border(red);
+		 width: 40% !important;
 	}
 }
