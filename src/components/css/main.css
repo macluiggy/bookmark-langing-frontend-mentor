@@ -83,8 +83,47 @@ main .main_section2 .card_container .card_description button:hover {
   color: var(--soft_blue);
   cursor: pointer;
 }
+main .main_section3 {
+  margin-top: 10em;
+  width: 80%;
+  margin: auto;
+}
+main .main_section3 .download_the_extension {
+  margin-bottom: 5em;
+}
+main .main_section3 .download_the_extension h2 {
+  font-size: 1.3888888889em;
+}
+main .main_section3 .download_the_extension p {
+  font-size: 0.8605556em;
+}
 main .main_section3 .extension_container {
-  border: solid black;
+  margin-bottom: 2em;
+  border-radius: 0.7em;
+  padding: 1.7em;
+  -webkit-box-shadow: 0px 5px 10px gray;
+  -moz-box-shadow: 0px 5px 10px gray;
+  box-shadow: 0px 5px 10px gray;
+}
+main .main_section3 .extension_container figure {
+  margin: auto;
+}
+main .main_section3 .extension_container figure figcaption p {
+  font-size: 0.8605556em;
+  color: var(--grayish_blue);
+}
+main .main_section3 .extension_container button {
+  padding: 0.7em 1.7em;
+  border: solid var(--soft_blue);
+  background-color: var(--soft_blue);
+  color: white;
+  font-weight: 700;
+  border-radius: 0.3em;
+  transition: color, background-color 0.5s;
+}
+main .main_section3 .extension_container button:hover {
+  background-color: white;
+  color: var(--soft_blue);
 }
 
 @media screen and (min-width: 900px) {
@@ -111,6 +150,10 @@ main .main_section3 .extension_container {
   }
   .main_section2 .card_container .card_description {
     text-align: left;
+  }
+
+  .main_section3 .extensions_container {
+    border: solid red;
   }
 }
 
