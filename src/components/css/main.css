@@ -152,8 +152,31 @@ main .main_section3 .extension_container button:hover {
     text-align: left;
   }
 
+  .main_section3 .download_the_extension {
+    width: 45%;
+    margin: auto;
+  }
+  .main_section3 .download_the_extension h2 {
+    font-size: 1.3888888889em !important;
+  }
+  .main_section3 .download_the_extension p {
+    font-size: 0.8605556em !important;
+  }
   .main_section3 .extensions_container {
-    border: solid red;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+  }
+  .main_section3 .extensions_container .extension_container1 {
+    align-self: flex-start;
+  }
+  .main_section3 .extensions_container .extension_container2 {
+    align-self: center;
+  }
+  .main_section3 .extensions_container .extension_container3 {
+    align-self: flex-end;
   }
 }
 

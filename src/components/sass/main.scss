@@ -164,9 +164,32 @@ main {
 		}
 	}
 	.main_section3 {
-
+		.download_the_extension {
+			width: 45%;
+			margin: auto;
+			h2 {
+				font-size:  1.3888888889em !important;
+			}
+			p {
+				font-size: 0.8605556em !important;
+			}
+		}
 		.extensions_container {
-			@include border(red);
+			//@include border(red);
+			width: 85%;
+			margin: auto;
+			display: flex;
+			height: 400px;
+			justify-content: space-around;
+			.extension_container1 {
+				align-self: flex-start;
+			}
+			.extension_container2 {
+				align-self: center;
+			}
+			.extension_container3 {
+				align-self: flex-end;
+			}
 		}
 	}
 }

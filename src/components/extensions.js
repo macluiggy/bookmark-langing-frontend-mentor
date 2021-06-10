@@ -13,7 +13,7 @@ class Extensions extends Component {
 		return <section className='extensions_container'>
         {
             extensions.map((extension, i) => {
-            return <article className='extension_container' key={extension.id}>
+            return <article className={`extension_container extension_container${extension.id}`} key={extension.id}>
                         <figure>
                             <img src={browsers[i]} alt={browsers[i]} />
                             <figcaption>
