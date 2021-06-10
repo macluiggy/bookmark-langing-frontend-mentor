@@ -21,7 +21,7 @@ class Extensions extends Component {
                                 <p>Minimum version {extension.version}</p>
                             </figcaption>
                         </figure>
-                        <button>Add & Install Extension</button>
+                        <button className='btn'>Add & Install Extension</button>
                     </article>         
             
             })

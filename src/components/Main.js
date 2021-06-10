@@ -4,6 +4,7 @@ import './css/main.css';
 //component
 import Cards from './cards'
 import Extensions from './extensions.js'
+import Questions from './questions'
 
 
 class Main extends Component {
@@ -23,6 +24,17 @@ class Main extends Component {
                     got a favourite you’d like us to prioritize.</p>
             </article>
             <Extensions />
+        </section>
+        <section className='main_section4'>
+            <article className='frequently_asked_questions'>
+                <h2>Frequently Asked Questions</h2>
+                <p>Here are some of our FAQs. If you have any other questions you’d like
+                    answered please feel free to email us.</p>
+            </article>
+            <section className='questions_container'>
+                <Questions />
+            </section>
+            <button>More Info</button>
         </section>
 		</main>
 	}

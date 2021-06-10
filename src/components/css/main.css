@@ -96,6 +96,7 @@ main .main_section3 .download_the_extension h2 {
 }
 main .main_section3 .download_the_extension p {
   font-size: 0.8605556em;
+  color: var(--grayish_blue);
 }
 main .main_section3 .extension_container {
   margin-bottom: 2em;
@@ -112,7 +113,7 @@ main .main_section3 .extension_container figure figcaption p {
   font-size: 0.8605556em;
   color: var(--grayish_blue);
 }
-main .main_section3 .extension_container button {
+main .main_section3 .extension_container .btn {
   padding: 0.7em 1.7em;
   border: solid var(--soft_blue);
   background-color: var(--soft_blue);
@@ -121,9 +122,43 @@ main .main_section3 .extension_container button {
   border-radius: 0.3em;
   transition: color, background-color 0.5s;
 }
-main .main_section3 .extension_container button:hover {
+main .main_section3 .extension_container .btn:hover {
   background-color: white;
   color: var(--soft_blue);
+}
+main .main_section4 {
+  border: solid transparent;
+  width: 80%;
+  margin: 4em auto;
+}
+main .main_section4 .frequently_asked_questions h2 {
+  font-size: 1.3888888889em;
+}
+main .main_section4 .frequently_asked_questions p {
+  font-size: 0.8605556em;
+  color: var(--grayish_blue);
+}
+main .main_section4 .question_container {
+  text-align: left;
+}
+main .main_section4 .question_container summary {
+  border-bottom: solid 1px var(--grayish_blue);
+  padding: 1em 0;
+}
+main .main_section4 .question_container p {
+  color: var(--grayish_blue);
+  font-size: 0.8605556em;
+}
+main .main_section4 button {
+  margin: 2em;
+  padding: 0.7em 1.7em;
+  border: solid var(--soft_blue);
+  background-color: var(--soft_blue);
+  color: white;
+  font-weight: 700;
+  border-radius: 0.3em;
+  transition: color, background-color 0.5s;
+  font-size: 1em;
 }
 
 @media screen and (min-width: 900px) {
@@ -155,12 +190,6 @@ main .main_section3 .extension_container button:hover {
   .main_section3 .download_the_extension {
     width: 45%;
     margin: auto;
-  }
-  .main_section3 .download_the_extension h2 {
-    font-size: 1.3888888889em !important;
-  }
-  .main_section3 .download_the_extension p {
-    font-size: 0.8605556em !important;
   }
   .main_section3 .extensions_container {
     width: 85%;

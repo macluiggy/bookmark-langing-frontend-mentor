@@ -96,6 +96,7 @@ main {
 			}
 			p {
 				font-size: 0.8605556em;
+				color: var(--grayish_blue);
 			}
 		}
 		.extension_container {
@@ -114,7 +115,7 @@ main {
 					}
 				}
 			}
-			button {
+			.btn {
 				padding: 0.7em 1.7em;
 				border: solid var(--soft_blue);
 				background-color: var(--soft_blue);
@@ -123,10 +124,47 @@ main {
 				border-radius: 0.3em;
 				transition: color, background-color 0.5s;
 			}
-			button:hover {
+			.btn:hover {
 				background-color: white;
 				color: var(--soft_blue);
 			}
+		}
+	}
+	.main_section4 {
+		@include border(transparent);
+		width: 80%;
+		margin: 4em auto;
+		.frequently_asked_questions {
+			h2 {
+				font-size: 1.3888888889em;
+			}
+			p {
+				font-size: 0.8605556em;
+				color: var(--grayish_blue);
+			}
+		}
+		.question_container {
+			text-align: left;
+			summary {
+				//@include border(orange);
+				border-bottom: solid 1px var(--grayish_blue);
+				padding: 1em 0;
+			}
+			p {
+				color: var(--grayish_blue);
+				font-size: 0.8605556em;
+			}
+		}
+		button {
+				margin: 2em;
+				padding: 0.7em 1.7em;
+				border: solid var(--soft_blue);
+				background-color: var(--soft_blue);
+				color: white;
+				font-weight: 700;
+				border-radius: 0.3em;
+				transition: color, background-color 0.5s;
+				font-size: 1em;
 		}
 	}
 }
@@ -167,12 +205,6 @@ main {
 		.download_the_extension {
 			width: 45%;
 			margin: auto;
-			h2 {
-				font-size:  1.3888888889em !important;
-			}
-			p {
-				font-size: 0.8605556em !important;
-			}
 		}
 		.extensions_container {
 			//@include border(red);
