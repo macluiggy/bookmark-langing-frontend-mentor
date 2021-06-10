@@ -1,10 +1,87 @@
 footer .contact {
-  border: solid red;
+  color: white;
   background-color: var(--soft_blue);
 }
 footer .contact article {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 0;
+}
+footer .contact article h4 {
+  letter-spacing: 0.4em;
+  font-size: 0.77777em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .contact article label {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+footer .contact article input {
+  margin: 0.5em 0;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-weight: 600;
+  font-size: 1.1111111111em;
+}
+footer .contact article .email {
+  color: var(--grayish_blue);
+  border: solid white;
+}
+footer .contact article .contact_us {
+  background-color: var(--soft_red);
+  color: white;
+  border: solid var(--soft_red);
+}
+footer .final {
+  background-color: var(--very_dark_blue);
+  color: white;
+  display: grid;
+  grid-template-areas: "bookmark" "items" "social";
+}
+footer .final .logo_container {
+  grid-area: bookmark;
+  border: solid white;
+}
+footer .final .logo_container img {
+  width: 10em;
+}
+footer .final ul {
+  grid-area: items;
+  padding: 0;
+}
+footer .final .social_container {
+  grid-area: social;
+}
+footer .final .social_container img {
+  margin: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  footer .contact article {
+    display: grid;
+    grid-template-areas: "already already already" "stay stay stay" "email email contact";
+    grid-gap: 1.7em 1em;
+    width: 40%;
+  }
+  footer .contact h4 {
+    grid-area: already;
+  }
+  footer .contact label {
+    grid-area: stay;
+  }
+  footer .contact input {
+    font-size: 0.9em !important;
+  }
+  footer .contact .email {
+    grid-area: email;
+  }
+  footer .contact .contact_us {
+    grid-area: contact;
+    cursor: pointer !important;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
