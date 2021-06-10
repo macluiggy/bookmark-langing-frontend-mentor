@@ -43,7 +43,6 @@ footer .final {
 }
 footer .final .logo_container {
   grid-area: bookmark;
-  border: solid white;
 }
 footer .final .logo_container img {
   width: 10em;
@@ -51,12 +50,27 @@ footer .final .logo_container img {
 footer .final ul {
   grid-area: items;
   padding: 0;
+  font-size: 1.3em;
+}
+footer .final ul li {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  color: var(--grayish_blue);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+footer .final ul li:hover {
+  color: var(--soft_red);
 }
 footer .final .social_container {
   grid-area: social;
 }
 footer .final .social_container img {
   margin: 1em;
+  cursor: pointer;
+}
+footer .final .social_container img:hover {
+  fill: var(--soft_red);
 }
 
 @media screen and (min-width: 900px) {
@@ -81,6 +95,22 @@ footer .final .social_container img {
   footer .contact .contact_us {
     grid-area: contact;
     cursor: pointer !important;
+  }
+  footer .final {
+    grid-template-areas: "bookmark items social";
+    align-items: center;
+  }
+  footer .final .logo_container img {
+    width: 8em;
+  }
+  footer .final ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 0.8em;
+  }
+  footer .final ul li {
+    margin-right: 1em;
+    margin-bottom: 0 !important;
   }
 }
 
