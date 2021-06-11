@@ -13,7 +13,7 @@ class Footer extends Component {
             <article>
             	<h4>35,000+ already joined</h4>
 	            <label htmlFor='email'>Stay up-to-date with what we’re doing</label>
-	            <input className='email' type="email" name="email" placeholder='Enter your email address'/>
+	            <input id='email' className='email' type="email" name="email" placeholder='Enter your email address'/>
 	            <input className='contact_us' type="button" name="submit" value='Contact Us' />
             </article>
         </section>
